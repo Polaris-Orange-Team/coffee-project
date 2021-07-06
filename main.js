@@ -26,6 +26,9 @@ function updateCoffees(e) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
+        else if (selectedRoast == "all") {
+            filteredCoffees.push(coffee)
+        }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
@@ -39,7 +42,9 @@ function updateCoffeeAgain(e){
         if(coffee.name.toLowerCase() === nameCoffee.toLowerCase()){
             filteredcoffee.push(coffee);
         }
-        });
+        if(coffee.name.toLowerCase().includes(nameCoffee.toLowerCase())) {
+            filteredcoffee.push(coffee);
+        }});
     tbody.innerHTML = renderCoffees(filteredcoffee)
 }
 
