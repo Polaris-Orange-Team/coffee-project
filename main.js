@@ -48,6 +48,18 @@ function updateCoffeeAgain(e){
     tbody.innerHTML = renderCoffees(filteredcoffee)
 }
 
+//function to add user coffee
+function addCoffee(event){
+    event.preventDefault();
+    var usercoffee = {
+        id: coffees.length,
+        name: userName.value,
+        roast: userRoast.value
+    }
+    coffees.push(usercoffee);
+    tbody.innerHTML = renderCoffees(coffees);
+}
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -73,7 +85,13 @@ var roastSelection = document.querySelector('#roast-selection');
 //name value for input to add coffee
 var nameSelection = document.querySelector("#name-selection");
 
+//user roast and name
+var userRoast = document.querySelector("#user-roast");
+var userName = document.querySelector("#user-name");
+var submitButtonTwo = document.querySelector("#submit-2");
+
 tbody.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('change', updateCoffees);
-nameSelection.addEventListener("change", updateCoffeeAgain);
+nameSelection.addEventListener("input", updateCoffeeAgain);
+submitButtonTwo.addEventListener("click", addCoffee);
