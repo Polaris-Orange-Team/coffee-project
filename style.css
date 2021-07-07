@@ -7,6 +7,7 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
 #coffees{
     -webkit-columns: 150px;
     -moz-columns: 25px;
@@ -14,6 +15,7 @@ td, th {
     -webkit-column-gap: 8em;
     -moz-column-gap: 2em;
     column-gap: 3em;
+    padding-right: 100px;
 }
 
 .header {
@@ -21,4 +23,6 @@ td, th {
     width: 100%;
     text-align: center;
 }
+
+
 
