@@ -11,60 +11,80 @@
 <body>
 <div class="container">
 
+    <!--Coffee Header-->
     <div class="header row">
         <div class="col">
             <h1>Coffee!</h1>
         </div>
     </div>
-    <hr>
-    <br>
 
+    <hr>
+
+    <!-- Second Half -->
     <div class="row">
 
+        <!--Coffee List -->
         <div id="coffees" class="col">
-
         </div>
 
+        <!--Forms-->
         <div class="col">
             <div class="row">
-                <div class="d-flex justify-content-center flex-column flex-sm-row ">
-<form>
-
-    <div class="form-group">
-        <label for=name-selection>Coffee Name</label>
-        <input id="name-selection" name="name-selection" type="name-selection">
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-            <option>all</option>
-        </select>
-    </div>
-</form>
+                <div class="col"
+                    <!--Search Form -->
+                    <form>
+                        <div class="col">
+                            Roast Selection
+                        </div>
+                        <div class="col">
+                            <label for="roast-selection"></label>
+                            <select class="w-100"id="roast-selection">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                                <option>all</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for=name-selection>Coffee Name</label>
+                        </div>
+                         <div class="col">
+                             <input class="w-100" id="name-selection" name="name-selection" type="name-selection">
+                         </div>
+                        <div class="col">
+                            <input class="btn btn-primary w-100" id="submit" type="submit">
+                        </div>
+                    </form>
                 </div>
-                <div class="row">
-            <div class="d-flex justify-content-center flex-column flex-sm-row">
 
-    <form>
-        <h1>Add a Coffee</h1>
-        <label for ="user-roast"></label>
-        <select id="user-roast">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <label for="user-name"></label>
-        <input id="user-name" name="user-name" type="user-name">
-        <input id="submit-2" type="submit">
-    </form>
-            </div>
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col"
+                        <!--User Input Form-->
+                        <form>
+                            <h1>Add a Coffee</h1>
+                            <label for ="user-roast"></label>
+                            <select class="w-100" id="user-roast">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <label for="user-name"></label>
+                            <input id="user-name" name="user-name" type="user-name">
+                            <div class="">
+                                <input class="btn btn-primary w-100" id="submit-2" type="submit">
+                             </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
 
     <script src="main.js"></script>
 </div>

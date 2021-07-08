@@ -24,5 +24,8 @@ td, th {
     text-align: center;
 }
 
+input:hover{
+    outline-color: blue;
+}
 
 
